@@ -12,6 +12,8 @@ jobs:
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
-        ftp-server: ftp.procurewizard.com
+        ftp-server: ftp://ftp.procurewizard.com/
         ftp-username: tillsales_odr_hotels_direct
         ftp-password: WC6aKBcEyRG24h2J
+        git-ftp-args: --dry-run
+        .git-ftp-ignore: config/*
