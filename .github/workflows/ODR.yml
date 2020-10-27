@@ -1,0 +1,19 @@
+on: push
+name: Till Management Transfer ODR
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2.1.0
+      with:
+        fetch-depth: 2
+
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.1.1
+      with:
+        ftp-server: ftp.procurewizard.com
+        ftp-username: tillsales_odr_hotels_direct
+        ftp-password: WC6aKBcEyRG24h2J
+        
+   
