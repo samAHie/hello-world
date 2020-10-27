@@ -13,7 +13,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@3.1.1
       with:
         ftp-server: ftp://ftp.procurewizard.com/
-        entryPoint: 22
         ftp-username: tillsales_odr_hotels_direct
         ftp-password: WC6aKBcEyRG24h2J
         local-dir: D:\FTP\PurchaserFTP-IRELAND\107\InboundData\FlashData\
